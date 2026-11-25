@@ -71,131 +71,114 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Daily Trivia App</h1>
-        
+
         <div class="last-updated">
-            <strong>Last updated:</strong> December 2024
+            <strong>Last updated:</strong> November 25, 2026
         </div>
 
         <h2>Introduction</h2>
-        <p>Welcome to Daily Trivia App ("we," "our," or "us"). We are committed to protecting your privacy and ensuring transparency about how we collect, use, and protect your information. This Privacy Policy explains our practices regarding your personal information when you use our mobile application.</p>
+        <p>This Privacy Policy explains what information the Daily Trivia App ("the app," "we," "our," or "us") collects, how we use it, who we share it with, and how you can delete it.</p>
 
         <h2>Information We Collect</h2>
-        
-        <h3>Information You Provide</h3>
+
+        <h3>Your account</h3>
         <ul>
-            <li><strong>Username/Display Name</strong>: When you create an account or play as a guest</li>
-            <li><strong>Game Progress</strong>: Your scores, achievements, and gameplay statistics</li>
-            <li><strong>User Preferences</strong>: Settings you configure within the app</li>
+            <li><strong>Email address and password</strong>: if you create an account with email. Your password is handled by Firebase Authentication (Google); we never see it.</li>
+            <li><strong>Google account details</strong>: if you sign in with Google, Google shares your name, email address and profile photo with Firebase Authentication. We use your email to identify your account and don't display your name or photo in the app.</li>
+            <li><strong>Username</strong>: the name you choose. It is shown to other players on the leaderboards.</li>
+            <li><strong>Account ID</strong>: a random ID assigned to your account, used to connect your account to your game data and subscription.</li>
         </ul>
 
-        <h3>Information Automatically Collected</h3>
+        <h3>Your gameplay</h3>
         <ul>
-            <li><strong>Device Information</strong>: Device type, operating system, and app version</li>
-            <li><strong>Usage Analytics</strong>: How you interact with the app, features used, and session duration</li>
-            <li><strong>Performance Data</strong>: Crash reports and app performance metrics (anonymized)</li>
+            <li>Points, streaks and leaderboard positions</li>
+            <li>Daily Quiz results (your score and which questions you got right)</li>
+            <li>Blitz scores</li>
+            <li>Quiz statistics such as your performance by topic</li>
         </ul>
 
-        <h3>Information We Don't Collect</h3>
+        <h3>Custom quiz topics</h3>
+        <p>When you create a custom quiz, the topic you type is sent to our server and to Google's Gemini AI service to write the questions. Please don't include personal information in a topic.</p>
+
+        <h3>Purchases</h3>
+        <p>If you subscribe to Premium, Apple processes the payment. We receive your subscription status and purchase history through RevenueCat, linked to your account ID. We never receive your payment card details.</p>
+
+        <h3>Referrals</h3>
+        <p>If you use or share a referral code, we store your referral code, who referred whom, and when. To stop one phone from claiming the same reward many times, we also store <strong>one-way hashed</strong> (SHA-256) versions of a random ID the app creates when installed and of Apple's identifier for vendor. The original identifiers can't be recovered from the hashes.</p>
+
+        <h3>Usage analytics</h3>
+        <p>We use Google Analytics for Firebase to understand how the app is used. It collects things like which screens and features you use, your device model, operating system and app version, an app-instance ID, and your approximate region (derived from your IP address). We don't link analytics to your account, username or email.</p>
+
+        <h3>Stored only on your device</h3>
+        <p>Your settings (such as light or dark mode), local statistics, custom quizzes and a cache of questions are stored on your device.</p>
+
+        <h3>What we don't collect</h3>
         <ul>
-            <li>We do not collect your real name, email address, phone number, or other personal contact information</li>
-            <li>We do not access your device's contacts, photos, or other personal files</li>
-            <li>We do not track your location</li>
+            <li>We don't access your contacts, photos or precise location.</li>
+            <li>We don't use your device's advertising identifier, show ads, or track you across other companies' apps and websites.</li>
+            <li>We don't sell your personal information.</li>
         </ul>
 
         <h2>How We Use Your Information</h2>
-        <p>We use the collected information to:</p>
         <ul>
-            <li>Provide and maintain the trivia game experience</li>
-            <li>Track your progress and achievements</li>
-            <li>Improve app performance and fix bugs</li>
-            <li>Analyze usage patterns to enhance the user experience</li>
-            <li>Ensure fair gameplay and prevent cheating</li>
+            <li>To run your account and keep your progress across devices</li>
+            <li>To show leaderboards, streaks and statistics</li>
+            <li>To generate custom quizzes</li>
+            <li>To provide Premium and referral rewards</li>
+            <li>To prevent fraud and abuse</li>
+            <li>To fix problems and improve the app</li>
         </ul>
 
-        <h2>Data Storage and Security</h2>
-        
-        <h3>Local Storage</h3>
+        <h2>Who We Share It With</h2>
+        <p>We share information only with the service providers that run the app, and only for that purpose:</p>
         <ul>
-            <li>Game progress and user preferences are primarily stored locally on your device</li>
-            <li>You can clear this data by uninstalling the app or clearing app data</li>
+            <li><strong>Google Firebase</strong>: sign-in, our database, and analytics (<a href="https://firebase.google.com/support/privacy">Firebase privacy</a>)</li>
+            <li><strong>Google Gemini</strong>: writes questions for custom quiz topics (<a href="https://policies.google.com/privacy">Google privacy policy</a>)</li>
+            <li><strong>RevenueCat</strong>: manages Premium subscriptions (<a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>)</li>
+            <li><strong>Apple</strong>: processes App Store payments (<a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a>)</li>
+            <li><strong>Vercel</strong>: hosts our server, which receives your requests, including your IP address (<a href="https://vercel.com/legal/privacy-policy">Vercel privacy policy</a>)</li>
         </ul>
+        <p>Other players can see your username and points on the leaderboards. We may also disclose information if the law requires it.</p>
 
-        <h3>Cloud Backup (Optional)</h3>
+        <h2>Deleting Your Account</h2>
+        <p>You can delete your account at any time in the app: <strong>Settings → Account → Delete Account</strong>. This permanently deletes:</p>
         <ul>
-            <li>If you enable cloud backup, your game progress is securely stored using Firebase</li>
-            <li>This allows you to restore your progress when switching devices</li>
-            <li>Cloud data is encrypted and stored securely on Google's servers</li>
+            <li>your account and sign-in details</li>
+            <li>your username, points, streaks, leaderboard entries, Daily Quiz results and Blitz scores</li>
+            <li>your referral code and referral records</li>
+            <li>your subscription record at RevenueCat</li>
+            <li>the account data stored on your device</li>
         </ul>
-
-        <h3>Data Security</h3>
-        <ul>
-            <li>We implement appropriate technical and organizational measures to protect your information</li>
-            <li>All data transmission is encrypted using industry-standard protocols</li>
-            <li>We regularly review and update our security practices</li>
-        </ul>
-
-        <h2>Data Sharing</h2>
-        <p>We do not sell, trade, or rent your personal information to third parties. We may share anonymized, aggregated data for:</p>
-        <ul>
-            <li>App analytics and improvement purposes</li>
-            <li>General usage statistics (no personally identifiable information)</li>
-        </ul>
-
-        <h2>Third-Party Services</h2>
-        <p>Our app uses the following third-party services:</p>
-        <ul>
-            <li><strong>Firebase (Google)</strong>: For optional cloud backup and analytics</li>
-            <li><strong>Flutter/Dart</strong>: For app development framework</li>
-        </ul>
-        <p>These services have their own privacy policies governing their use of information.</p>
-
-        <h2>Children's Privacy</h2>
-        <p>Our app is suitable for users of all ages. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
-
-        <h2>Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li><strong>Access</strong>: Request information about the data we have about you</li>
-            <li><strong>Delete</strong>: Request deletion of your data (contact us or uninstall the app)</li>
-            <li><strong>Correct</strong>: Request correction of inaccurate information</li>
-            <li><strong>Opt-out</strong>: Disable analytics or cloud backup in app settings</li>
-        </ul>
+        <p>We keep the hashed device identifiers described under Referrals, with the link to your account removed, so the referral reward can't be claimed again from the same phone. Analytics data isn't linked to your account and expires under Google Analytics' retention settings.</p>
+        <p><strong>Deleting your account doesn't cancel a Premium subscription.</strong> Cancel it in your iPhone's Settings → [your name] → Subscriptions. Apple keeps its own record of your purchases.</p>
+        <p>If you can't access the app, email us and we'll delete your account for you.</p>
 
         <h2>Data Retention</h2>
         <ul>
-            <li>Local data is retained until you uninstall the app or clear app data</li>
-            <li>Cloud backup data is retained while your account is active</li>
-            <li>Analytics data is retained for up to 2 years in anonymized form</li>
+            <li>Account and gameplay data are kept until you delete your account.</li>
+            <li>Data on your device is kept until you delete your account, delete the app, or clear its data.</li>
+            <li>Analytics data is kept according to Google Analytics for Firebase's retention settings.</li>
         </ul>
 
+        <h2>Security</h2>
+        <p>Data is sent over encrypted connections (HTTPS) and stored with Google Firebase, which encrypts data at rest. Access to your account data is restricted by security rules so only you (and our server) can change it. No system is perfectly secure, but we work to protect your information.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>The app is not directed to children under 13, and we don't knowingly collect personal information from children under 13. If you believe a child under 13 has created an account, contact us and we'll delete it.</p>
+
+        <h2>Your Rights</h2>
+        <p>Depending on where you live (for example, in the EU, UK or California), you may have the right to access, correct, delete or receive a copy of your personal information, and to object to or restrict how we use it. You can delete your account in the app at any time. For any other request, contact us using the details below. We won't treat you differently for using these rights.</p>
+
         <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify users of any material changes by:</p>
-        <ul>
-            <li>Updating the "Last updated" date at the top of this policy</li>
-            <li>Providing an in-app notification for significant changes</li>
-        </ul>
+        <p>If we change this policy, we'll update the "Last updated" date above. For significant changes, we'll also let you know in the app.</p>
 
         <h2>Contact Us</h2>
         <div class="contact-info">
-            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+            <p>If you have any questions about this Privacy Policy or want to make a privacy request, please contact us:</p>
             <ul>
                 <li><strong>Email</strong>: adamgarland3@gmail.com</li>
-                <li><strong>Contact Form</strong>: <a href="https://forms.gle/RCdvoJ2ANB1adKFL7p">https://forms.gle/RCdvoJ2ANB1adKFL7</a></li>
+                <li><strong>Contact Form</strong>: <a href="https://forms.gle/RCdvoJ2ANB1adKFL7">https://forms.gle/RCdvoJ2ANB1adKFL7</a></li>
             </ul>
-        </div>
-
-        <h2>Compliance</h2>
-        <p>This privacy policy is designed to comply with:</p>
-        <ul>
-            <li>General Data Protection Regulation (GDPR)</li>
-            <li>California Consumer Privacy Act (CCPA)</li>
-            <li>Children's Online Privacy Protection Act (COPPA)</li>
-            <li>Google Play Store and Apple App Store privacy requirements</li>
-        </ul>
-
-        <div class="footer">
-            <hr>
-            <p>By using Daily Trivia App, you acknowledge that you have read and understood this Privacy Policy and agree to the collection and use of information in accordance with this policy.</p>
         </div>
     </div>
 </body>
